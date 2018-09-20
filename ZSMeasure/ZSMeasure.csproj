@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{064A6998-83FE-4A15-AA48-62480594070C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZSMeasure</RootNamespace>
+    <AssemblyName>ZSMeasure_BA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>measure.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="halcondotnet, Version=12.0.2.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGridViewEx\DataGridViewCombineCell.cs" />
+    <Compile Include="DataGridViewEx\DataGridViewComboBoxColumnEx.cs" />
+    <Compile Include="DataGridViewEx\DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewEx\DataGridViewGroupColumn.cs" />
+    <Compile Include="DBQuery.cs" />
+    <Compile Include="TextSpeech.cs" />
+    <Compile Include="UserControl\CCDShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\CCDShow.designer.cs">
+      <DependentUpon>CCDShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Either.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Either.designer.cs">
+      <DependentUpon>Either.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinForm\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\AxSerialPort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\AxSerialPort.designer.cs">
+      <DependentUpon>AxSerialPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="HalconHelp.cs" />
+    <Compile Include="WinForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchingModule\MatchingAssistant.cs" />
+    <Compile Include="MatchingModule\MatchingOpt.cs" />
+    <Compile Include="MatchingModule\MatchingOptSpeed.cs" />
+    <Compile Include="MatchingModule\MatchingOptStatistics.cs" />
+    <Compile Include="MatchingModule\MatchingParam.cs" />
+    <Compile Include="MatchingModule\MatchingResult.cs" />
+    <Compile Include="UserControl\myCCDHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\myCCDHelp.Designer.cs">
+      <DependentUpon>myCCDHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyFunction.cs" />
+    <Compile Include="WinForm\CCDParaConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\CCDParaConfig.Designer.cs">
+      <DependentUpon>CCDParaConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinForm\SerialPortHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\SerialPortHelp.Designer.cs">
+      <DependentUpon>SerialPortHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewROI\FunctionPlot.cs" />
+    <Compile Include="ViewROI\GraphicsContext.cs" />
+    <Compile Include="ViewROI\HObjectEntry.cs" />
+    <Compile Include="ViewROI\HWndCtrl.cs" />
+    <Compile Include="ViewROI\ROI.cs" />
+    <Compile Include="ViewROI\ROICircle.cs" />
+    <Compile Include="ViewROI\ROICircularArc.cs" />
+    <Compile Include="ViewROI\ROIController.cs" />
+    <Compile Include="ViewROI\ROILine.cs" />
+    <Compile Include="ViewROI\ROIRectangle1.cs" />
+    <Compile Include="ViewROI\ROIRectangle2.cs" />
+    <Compile Include="WinForm\SwitchBreakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\SwitchBreakForm.designer.cs">
+      <DependentUpon>SwitchBreakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\Welcome.designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControl\CCDShow.resx">
+      <DependentUpon>CCDShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Either.resx">
+      <DependentUpon>Either.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\AxSerialPort.resx">
+      <DependentUpon>AxSerialPort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\myCCDHelp.resx">
+      <DependentUpon>myCCDHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CCDParaConfig.resx">
+      <DependentUpon>CCDParaConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WinForm\SerialPortHelp.resx">
+      <DependentUpon>SerialPortHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\SwitchBreakForm.resx">
+      <DependentUpon>SwitchBreakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\026.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\027.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HalconCCD\HalconCCD.csproj">
+      <Project>{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}</Project>
+      <Name>HalconCCD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="measure.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

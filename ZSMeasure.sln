@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZSMeasure", "ZSMeasure\ZSMeasure.csproj", "{064A6998-83FE-4A15-AA48-62480594070C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalconCCD", "HalconCCD\HalconCCD.csproj", "{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064A6998-83FE-4A15-AA48-62480594070C}.Debug|x64.ActiveCfg = Debug|x64
+		{064A6998-83FE-4A15-AA48-62480594070C}.Debug|x64.Build.0 = Debug|x64
+		{064A6998-83FE-4A15-AA48-62480594070C}.Debug|x86.ActiveCfg = Debug|x86
+		{064A6998-83FE-4A15-AA48-62480594070C}.Debug|x86.Build.0 = Debug|x86
+		{064A6998-83FE-4A15-AA48-62480594070C}.Release|x64.ActiveCfg = Release|x64
+		{064A6998-83FE-4A15-AA48-62480594070C}.Release|x64.Build.0 = Release|x64
+		{064A6998-83FE-4A15-AA48-62480594070C}.Release|x86.ActiveCfg = Release|x86
+		{064A6998-83FE-4A15-AA48-62480594070C}.Release|x86.Build.0 = Release|x86
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Debug|x64.ActiveCfg = Debug|x64
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Debug|x64.Build.0 = Debug|x64
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Debug|x86.ActiveCfg = Debug|x86
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Debug|x86.Build.0 = Debug|x86
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Release|x64.ActiveCfg = Release|x64
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Release|x64.Build.0 = Release|x64
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Release|x86.ActiveCfg = Release|x86
+		{9ED471C7-F03E-43D4-A05F-5A63BAB0143D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
